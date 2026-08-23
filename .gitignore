@@ -1,0 +1,11 @@
+.gradle/
+build/
+out/
+run/
+*.iml
+.idea/
+
+# Local backups / archives
+*.zip
+*.rar
+release/

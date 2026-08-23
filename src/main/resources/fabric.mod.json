@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblekanto_server_fixes",
+  "version": "${version}",
+  "name": "CobbleKanto Server Fixes",
+  "description": "Server-side hotfixes for CobbleKanto servers.",
+  "authors": [
+    "CobbleKanto Team"
+  ],
+  "license": "CobbleKanto Project Custom License",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.crulim.cobblekantoserverfixes.CobbleKantoServerFixes"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "cobblekanto": "*",
+    "daycareplus": "*",
+    "exposure": "*",
+    "cobblemonraiddens": "=0.11.1+1.21.1",
+    "eclipsescustomname": "=0.3.3-1.21.1"
+  },
+  "mixins": [
+    "cobblekanto_server_fixes.mixins.json"
+  ]
+}

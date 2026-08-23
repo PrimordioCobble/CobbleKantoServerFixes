@@ -1,0 +1,36 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "net.crulim.cobblekantoserverfixes.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "mixins": [
+    "AdventureCameraStandItemStackMixin",
+    "AdventureCameraStandPlayerEntityMixin",
+    "CommandManagerMixin",
+    "ServerPlayNetworkHandlerMixin",
+    "ServerConfigurationNetworkHandlerLuckPermsMixin",
+    "NeoApiLuckPermsFailClosedMixin",
+    "CobbleKantoElevatorOffThreadGuardMixin",
+    "PlayerManagerMixin",
+    "FarmlandBlockMixin",
+    "TypeAwareVillagerTradeCrashGuardMixin",
+    "RadGymsPlayerSpawnHelperCrashGuardMixin",
+    "RivalNPCEntityMixin",
+    "RaidCrystalBlockMixin",
+    "RaidBossNeverShinyMixin",
+    "CobbleKantoRaidDensBridgeMixin",
+    "RaidChallengePacketMixin",
+    "RaidInstanceParticipantRewardMixin",
+    "RaidInstanceInvoker",
+    "KantoDaycareBreedingUtilsMixin",
+    "KantoDaycarePotentialPokemonPropertiesMixin",
+    "KantoDaycareServerPlayerInteractionManagerMixin",
+    "CobblemonWorldSpawnPoolMixin",
+    "CobblemonCaptureBehaviorMixin",
+    "CobbleKantoSpawnerGlobalSweepMixin",
+    "KantoSpawnersGlobalSweepMixin"
+  ]
+}
