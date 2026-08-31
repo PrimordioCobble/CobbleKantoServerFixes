@@ -3,15 +3,18 @@
   "id": "cobblekanto_server_fixes",
   "version": "${version}",
   "name": "CobbleKanto Server Fixes",
-  "description": "Server-side hotfixes for CobbleKanto servers.",
+  "description": "CobbleKanto server-side hotfixes plus isolated client compatibility fixes.",
   "authors": [
     "CobbleKanto Team"
   ],
   "license": "CobbleKanto Project Custom License",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.crulim.cobblekantoserverfixes.CobbleKantoServerFixes"
+    "client": [
+      "net.crulim.cobblekantoserverfixes.CobbleKantoServerFixesClient"
+    ],
+    "server": [
+      "net.crulim.cobblekantoserverfixes.CobbleKantoServerFixesDedicatedServer"
     ]
   },
   "depends": {
@@ -28,6 +31,9 @@
     "eclipsescustomname": "=0.3.3-1.21.1"
   },
   "mixins": [
-    "cobblekanto_server_fixes.mixins.json"
+    {
+      "config": "cobblekanto_server_fixes.mixins.json",
+      "environment": "server"
+    }
   ]
 }
