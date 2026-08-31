@@ -11,6 +11,7 @@ base {
 }
 
 repositories {
+    mavenCentral()
 }
 
 dependencies {
@@ -18,6 +19,11 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // Lightweight server-side SVG renderer used only to rasterize Challonge's official
+    // printer-friendly bracket image. Loom include nests the non-mod library in our final JAR.
+    implementation "com.github.weisj:jsvg:2.1.0"
+    include "com.github.weisj:jsvg:2.1.0"
 }
 
 processResources {

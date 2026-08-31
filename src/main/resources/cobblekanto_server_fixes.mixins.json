@@ -30,6 +30,9 @@
     "KantoDaycareServerPlayerInteractionManagerMixin",
     "CobblemonWorldSpawnPoolMixin",
     "CobblemonCaptureBehaviorMixin",
+    "CobblemonBattleRegistryGen3Mixin",
+    "CobblemonShowdownPokemonLegacyAbilityMixin",
+    "CobblemonPokemonLegacyShowdownIdMixin",
     "CobbleKantoSpawnerGlobalSweepMixin",
     "KantoSpawnersGlobalSweepMixin"
   ]

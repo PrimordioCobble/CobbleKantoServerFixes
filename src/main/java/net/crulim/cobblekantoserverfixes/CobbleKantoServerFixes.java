@@ -13,6 +13,7 @@ public class CobbleKantoServerFixes implements ModInitializer {
         ServerFixesConfig.init();
         CobblemonCatchBehaviorBridge.register();
         PokemonAnnouncementBridge.register();
+        TournamentBattleBridge.register();
         HangingSignInteractionFix.register();
         CameraNightVisionSuppressor.register();
         KantoDaycareBridge.register();
